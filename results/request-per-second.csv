@@ -1,0 +1,4 @@
+Server,Health Check,Static,Http Request
+nginx-fpm,666.15,724.31,645.94
+generic-web,700.72,780.30,679.62
+generic-addon,663.11,718.42,658.90

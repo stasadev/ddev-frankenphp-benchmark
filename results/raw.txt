@@ -1,0 +1,132 @@
++ wrk -t16 -c100 -d30s --latency https://laravel12-nginx-fpm.ddev.site/api/health-check
+Running 30s test @ https://laravel12-nginx-fpm.ddev.site/api/health-check
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   142.86ms   23.13ms 337.48ms   83.18%
+    Req/Sec    42.04     12.38    70.00     74.49%
+  Latency Distribution
+     50%  135.91ms
+     75%  151.19ms
+     90%  171.00ms
+     99%  214.84ms
+  20042 requests in 30.09s, 2.77MB read
+Requests/sec:    666.15
+Transfer/sec:     94.33KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-nginx-fpm.ddev.site/api/static
+Running 30s test @ https://laravel12-nginx-fpm.ddev.site/api/static
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   131.50ms   10.93ms 207.42ms   71.67%
+    Req/Sec    45.53     12.78    60.00     52.61%
+  Latency Distribution
+     50%  130.26ms
+     75%  137.28ms
+     90%  145.51ms
+     99%  163.94ms
+  21779 requests in 30.07s, 5.40MB read
+Requests/sec:    724.31
+Transfer/sec:    183.91KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-nginx-fpm.ddev.site/api/http-request
+Running 30s test @ https://laravel12-nginx-fpm.ddev.site/api/http-request
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   147.59ms   17.77ms 215.66ms   73.36%
+    Req/Sec    40.59     12.66    60.00     75.69%
+  Latency Distribution
+     50%  140.12ms
+     75%  160.83ms
+     90%  177.27ms
+     99%  189.92ms
+  19405 requests in 30.04s, 7.98MB read
+Requests/sec:    645.94
+Transfer/sec:    271.88KB
+
+---
+
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-web.ddev.site/api/health-check
+Running 30s test @ https://laravel12-generic-web.ddev.site/api/health-check
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   135.87ms   24.09ms 493.54ms   79.67%
+    Req/Sec    44.19     11.88    70.00     60.49%
+  Latency Distribution
+     50%  131.85ms
+     75%  146.38ms
+     90%  162.03ms
+     99%  208.88ms
+  21080 requests in 30.08s, 3.42MB read
+Requests/sec:    700.72
+Transfer/sec:    116.33KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-web.ddev.site/api/static
+Running 30s test @ https://laravel12-generic-web.ddev.site/api/static
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   122.48ms   25.21ms 402.78ms   82.96%
+    Req/Sec    49.08     11.56    80.00     86.75%
+  Latency Distribution
+     50%  117.38ms
+     75%  131.34ms
+     90%  149.04ms
+     99%  216.44ms
+  23470 requests in 30.08s, 5.13MB read
+Requests/sec:    780.30
+Transfer/sec:    174.50KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-web.ddev.site/api/http-request
+Running 30s test @ https://laravel12-generic-web.ddev.site/api/http-request
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   140.38ms   21.17ms 236.86ms   67.73%
+    Req/Sec    42.61     12.04    60.00     59.57%
+  Latency Distribution
+     50%  135.01ms
+     75%  155.59ms
+     90%  170.92ms
+     99%  194.92ms
+  20418 requests in 30.04s, 7.79MB read
+Requests/sec:    679.62
+Transfer/sec:    265.48KB
+
+---
+
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-addon.ddev.site/api/health-check
+Running 30s test @ https://laravel12-generic-addon.ddev.site/api/health-check
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   143.85ms   31.37ms 456.66ms   82.32%
+    Req/Sec    41.83     12.40    70.00     74.98%
+  Latency Distribution
+     50%  137.73ms
+     75%  155.06ms
+     90%  177.22ms
+     99%  247.19ms
+  19951 requests in 30.09s, 3.23MB read
+Requests/sec:    663.11
+Transfer/sec:    110.09KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-addon.ddev.site/api/static
+Running 30s test @ https://laravel12-generic-addon.ddev.site/api/static
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   132.77ms   16.74ms 225.89ms   69.82%
+    Req/Sec    45.10     10.82    70.00     63.90%
+  Latency Distribution
+     50%  130.72ms
+     75%  142.59ms
+     90%  154.97ms
+     99%  180.44ms
+  21602 requests in 30.07s, 4.72MB read
+Requests/sec:    718.42
+Transfer/sec:    160.66KB
++ wrk -t16 -c100 -d30s --latency https://laravel12-generic-addon.ddev.site/api/http-request
+Running 30s test @ https://laravel12-generic-addon.ddev.site/api/http-request
+  16 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   144.71ms   21.69ms 289.51ms   66.71%
+    Req/Sec    41.47     12.22    60.00     76.58%
+  Latency Distribution
+     50%  139.55ms
+     75%  160.56ms
+     90%  175.77ms
+     99%  199.83ms
+  19805 requests in 30.06s, 7.56MB read
+Requests/sec:    658.90
+Transfer/sec:    257.38KB
