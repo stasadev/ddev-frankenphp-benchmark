@@ -1,0 +1,9 @@
+web_extra_daemons:
+    - name: "frankenphp"
+      command: "composer install --no-dev -d /var/www/html && composer run-script post-create-project-cmd -d /var/www/html && frankenphp php-server --listen=0.0.0.0:80 --root=\"/var/www/html/${DDEV_DOCROOT:-}\" -v -a"
+      directory: /var/www/html
+web_extra_exposed_ports:
+    - name: "frankenphp"
+      container_port: 80
+      http_port: 80
+      https_port: 443

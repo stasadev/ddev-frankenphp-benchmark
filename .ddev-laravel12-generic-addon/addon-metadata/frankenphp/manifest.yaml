@@ -1,0 +1,10 @@
+name: frankenphp
+repository: stasadev/ddev-frankenphp
+version: v0.2.2
+install_date: "2025-07-01T19:13:35+03:00"
+project_files:
+    - commands/frankenphp/php
+    - docker-compose.frankenphp.yaml
+    - frankenphp/Caddyfile
+global_files: []
+removal_actions: []

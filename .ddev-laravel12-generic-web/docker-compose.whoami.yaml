@@ -1,0 +1,10 @@
+services:
+  whoami:
+    container_name: ddev-${DDEV_SITENAME}-whoami
+    image: traefik/whoami
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    volumes:
+      - ".:/mnt/ddev_config"
+      - "ddev-global-cache:/mnt/ddev-global-cache"

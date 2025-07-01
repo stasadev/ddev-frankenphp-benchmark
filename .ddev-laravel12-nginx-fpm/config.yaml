@@ -1,0 +1,18 @@
+type: laravel
+docroot: public
+php_version: "8.4"
+webserver_type: nginx-fpm
+xdebug_enabled: false
+additional_hostnames: []
+additional_fqdns: []
+database:
+    type: mariadb
+    version: "10.11"
+hooks:
+    post-start:
+        - composer: install --no-dev
+        - composer: run-script post-create-project-cmd
+use_dns_when_possible: true
+composer_version: "2"
+web_environment: []
+corepack_enable: false
