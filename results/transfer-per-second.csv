@@ -1,4 +1,4 @@
 Server,Health Check,Static,Http Request
-nginx-fpm,94.33,183.91,271.88
-generic-web,116.33,174.50,265.48
-generic-addon,110.09,160.66,257.38
+nginx-fpm,105.01,182.84,241.56
+frankenphp,97.99,135.55,209.72
+apache-fpm,116.70,153.46,228.13

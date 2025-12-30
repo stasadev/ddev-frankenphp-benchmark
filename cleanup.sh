@@ -2,7 +2,7 @@
 
 set -eu -o pipefail
 
-projects=("laravel12-generic-addon" "laravel12-generic-web" "laravel12-nginx-fpm")
+projects=("laravel12-nginx-fpm" "laravel12-frankenphp" "laravel12-apache-fpm")
 
 ddev delete -Oy "${projects[@]}"
 

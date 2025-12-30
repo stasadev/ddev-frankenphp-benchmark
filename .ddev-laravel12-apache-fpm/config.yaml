@@ -1,13 +1,13 @@
 type: laravel
 docroot: public
 php_version: "8.4"
-webserver_type: generic
+webserver_type: apache-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
     type: mariadb
-    version: "10.11"
+    version: "11.8"
 hooks:
     post-start:
         - composer: install --no-dev
