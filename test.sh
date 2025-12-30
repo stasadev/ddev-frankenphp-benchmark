@@ -7,7 +7,7 @@ if ! command -v wrk >/dev/null 2>&1; then
     exit 1
 fi
 
-projects=("laravel12-generic-addon" "laravel12-generic-web" "laravel12-nginx-fpm")
+projects=("laravel12-nginx-fpm" "laravel12-frankenphp" "laravel12-apache-fpm")
 
 for project in "${projects[@]}"; do
     echo "Testing $project..."

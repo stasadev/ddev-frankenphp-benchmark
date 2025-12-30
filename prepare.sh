@@ -2,7 +2,7 @@
 
 set -eu -o pipefail
 
-projects=("laravel12-generic-addon" "laravel12-generic-web" "laravel12-nginx-fpm")
+projects=("laravel12-apache-fpm" "laravel12-frankenphp" "laravel12-nginx-fpm")
 
 for project in "${projects[@]}"; do
     if [[ ! -d "$project" ]]; then
